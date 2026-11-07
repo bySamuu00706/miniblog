@@ -87,3 +87,5 @@ revisión; después entra como `docente.demo` (o como administrador), revísala 
 
 - Repetí por error los pasos de la rama `add-license` y tuve que rehacerla con `git reset --hard` y `git push --force`.
 - Un `git mv` mal escrito falló hasta que usé el nombre correcto del fichero (`LICESE`).
+
+Licencia: MIT. Autor: bySamuu00706.
