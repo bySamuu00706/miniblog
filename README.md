@@ -75,3 +75,15 @@ revisión; después entra como `docente.demo` (o como administrador), revísala 
 
 > **Importante:** borra estos usuarios (en `/admin/users/`, como administrador) o cambia su contraseña
 > antes de publicar el blog en internet. Contraseñas conocidas en un servidor público son un riesgo.
+
+## Cómo he desplegado el proyecto
+
+1. Instalé Git, PHP, Composer y las extensiones necesarias en Debian 13.
+2. Hice fork de `mpgprofe/miniblog` y cloné mi copia por SSH.
+3. Ejecuté `composer install`, `php bin/console create-schema` y `php bin/console app:create-user admin "Administrador"`.
+4. Arranqué la aplicación con `php -S localhost:8000 -t public`.
+
+### Problemas encontrados
+
+- Repetí por error los pasos de la rama `add-license` y tuve que rehacerla con `git reset --hard` y `git push --force`.
+- Un `git mv` mal escrito falló hasta que usé el nombre correcto del fichero (`LICESE`).
